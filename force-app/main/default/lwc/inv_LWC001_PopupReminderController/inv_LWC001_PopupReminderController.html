@@ -1,0 +1,8 @@
+<template>
+    <template for:each={reminders} for:item="reminder">
+        <div key={reminder.Id} class={reminder.toastClass} data-id={reminder.Id} onclick={handleClose}>
+            <strong>{reminder.Name}</strong>
+            <p>Reminder Time: {reminder.formattedTime}</p>
+        </div>
+    </template>
+</template>
