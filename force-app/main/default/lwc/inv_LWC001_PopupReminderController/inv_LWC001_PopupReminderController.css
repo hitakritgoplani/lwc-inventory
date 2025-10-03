@@ -1,0 +1,53 @@
+/* High Priority */
+.High {
+    background-color: #f28b82; /* Light pastel red */
+    color: black;
+}
+
+/* Medium Priority */
+.Medium {
+    background-color: #81c995; /* Light pastel green */
+    color: black;
+}
+
+/* Low Priority */
+.Low {
+    background-color: #aecbfa; /* Light pastel blue */
+    color: black;
+}
+
+/* Toast container styling */
+:host {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.toast {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.toast:hover {
+    transform: scale(1.03);
+}
+
+.toast button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    font-size: 1rem;
+}
